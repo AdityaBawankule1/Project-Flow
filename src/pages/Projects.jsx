@@ -1,20 +1,6 @@
 import {
-  Users,
   Briefcase,
-  DollarSign,
-  TrendingUp,
   Plus,
-  Eye,
-  Filter,
-  Download,
-  Mail,
-  Calendar,
-  Clock,
-  AlertCircle,
-  CheckCircle2,
-  Star,
-  ArrowRight,
-  MoreVertical
 } from "lucide-react";
 import Button from "../components/ui/Button";
 import Card from "../components/ui/Card";
