@@ -4,6 +4,9 @@ import Header from "./components/layout/Header";
 import Dashboard from "./pages/Dashboard";
 import Projects from "./pages/Projects";
 import Clients from "./pages/Clients";
+import Reports from "./pages/Reports";
+import Team from "./pages/Team";
+import Settings from "./pages/Settings";
 import Login from "./pages/Login";
 
 const App = () => {
@@ -46,8 +49,11 @@ const App = () => {
   const renderPage = () => {
     switch (activePage) {
       case "dashboard": return <Dashboard user={user} />;
-      case "projects": return <Projects />;
-      case "clients": return <Clients />;
+      case "projects": return <Projects user={user} />;
+      case "clients": return <Clients user={user} />;
+      case "reports": return <Reports user={user} />;
+      case "team": return <Team user={user} />;
+      case "settings": return <Settings user={user} />;
       default: return <Dashboard user={user} />;
     }
   };
